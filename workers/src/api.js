@@ -48,9 +48,9 @@ async function query(event, x) {
   } else {
     //difference
     if (values.length <= 1) {
-      return { result: "KO" };
+      return { result: "?" };
     }
-    let diff = abs(values[0] - values[1]);
+    let diff = values[0] - values[1];
     return { result: diff };
   }
 }
